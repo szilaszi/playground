@@ -1,6 +1,5 @@
 package szilasz.playground.threading;
 
-import org.jetbrains.annotations.NotNull;
 import org.junit.jupiter.api.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -265,7 +264,6 @@ public class CompletableFutureTest {
         });
     }
 
-    @NotNull
     private Runnable getWaitingForlongRunner(final CompletableFuture<String> longRunner) {
         return () -> {
             log.info("Waiting for longRunner");
